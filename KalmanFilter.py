@@ -274,7 +274,7 @@ def Main():
     KalmanFilter(F=20, DataLength=2000, Q_Value=10 ** -8, R_Value=0.1, NoisePow=0.3, Estimation=4/5, Figure=2, KT=1)
 
     """
-    #TEST CASES for Mean#
+    #TEST CASES#
   
     BestMean=[]
     temp=0.0
@@ -295,8 +295,7 @@ def Main():
     for i in range(len(BestMean)):
       print(BestMean[i])      
   
-    #TEST CASES for Variance#
-  
+
     BestVar=[]
     for Noise in range(1,4):  #Noise level
       for Hz in range(1,5):  #Prediction Update Rate  
@@ -314,8 +313,7 @@ def Main():
     print('Best results for the variance test cases with data x=100+10t+0.5t^2')
     for i in range(len(BestVar)):
       print(BestVar[i])    
-  
+ 
     """
-
 
 Main()
